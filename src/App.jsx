@@ -5,22 +5,25 @@ import Login from "./components/Login";
 import Main from "./components/Main";
 import Signup from "./components/Signup";
 import PopulationChart from "./components/Populationchart";
+import Village from "./components/village";
+import ErrorBoundary from './components/ErrorBoundary';
 
 function App() {
   return (
-    <Router>
+    <ErrorBoundary>
+      <Router>
         <main className="flex-1">
           <Routes>
             <Route path="/main" element={<Main />} />
-            <Route path="/village" element={<PopulationChart />} />
+            <Route path="/village" element={<Village />} />
             <Route path="/chat" element={<div>Chat Component</div>} />
             <Route path="/gallery" element={<div>Gallery Component</div>} />
-            <Route path="/login" element={<Login />} />
+            <Route path="/" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
           </Routes>
         </main>
-      
-    </Router>
+      </Router>
+    </ErrorBoundary>
   );
 }
 
