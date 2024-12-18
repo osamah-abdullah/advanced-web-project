@@ -1,34 +1,57 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 
-const Sidebar = () => (
-  <aside className="w-full md:w-64 bg-gray-800 flex flex-col p-4">
+const Sidebar = () => {
+  const location = useLocation();
+  const currentPath = location.pathname;
+
+  return (
+    <aside className="w-full md:w-64 bg-gray-800 flex flex-col p-4 text-white">
       <h2 className="text-xl font-bold mb-6">Dashboard</h2>
       <ul className="flex-grow space-y-4">
         <li>
-          <a href="#" className="block p-2 rounded bg-custom-gray-blue">
+          <Link
+            to="/main"
+            className={`block p-2 rounded ${
+              currentPath === "/main" ? "bg-custom-gray-blue" : "hover:bg-blue-500"
+            }`}
+          >
             Overview
-          </a>
+          </Link>
         </li>
         <li>
-          <a
-            href="village.html"
-            className="block p-2 rounded hover:bg-blue-500"
+          <Link
+            to="/village"
+            className={`block p-2 rounded ${
+              currentPath === "/village"
+                ? "bg-custom-gray-blue"
+                : "hover:bg-blue-500"
+            }`}
           >
             Village Management
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="chat.html" className="block p-2 rounded hover:bg-blue-500">
+          <Link
+            to="/chat"
+            className={`block p-2 rounded ${
+              currentPath === "/chat" ? "bg-custom-gray-blue" : "hover:bg-blue-500"
+            }`}
+          >
             Chat
-          </a>
+          </Link>
         </li>
         <li>
-          <a
-            href="gallery.html"
-            className="block p-2 rounded hover:bg-blue-500"
+          <Link
+            to="/gallery"
+            className={`block p-2 rounded ${
+              currentPath === "/gallery"
+                ? "bg-custom-gray-blue"
+                : "hover:bg-blue-500"
+            }`}
           >
             Gallery
-          </a>
+          </Link>
         </li>
       </ul>
       <div className="mt-auto flex items-center">
@@ -38,11 +61,12 @@ const Sidebar = () => (
           className="w-10 h-10 rounded-full mr-2"
         />
         <span>Osamah</span>
-        <a href="#" className="ml-auto text-red-500 font-bold">
+        <Link to="/logout" className="ml-auto text-red-500 font-bold">
           Logout
-        </a>
+        </Link>
       </div>
     </aside>
-);
+  );
+};
 
 export default Sidebar;

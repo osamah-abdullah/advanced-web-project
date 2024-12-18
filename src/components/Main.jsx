@@ -178,7 +178,7 @@ const Main = () => {
   return (
   <div className="flex flex-col md:flex-row h-screen bg-gray-900 text-white">
     {/* Sidebar */}
-    <Sidebar />
+    <Sidebar/>
 
     {/* Main Content */}
     <main className="flex-grow flex flex-col">
