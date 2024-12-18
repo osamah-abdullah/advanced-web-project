@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import PopulationChart from "./Populationchart";
+import Sidebar from "./Sidebar";
 import {
   Chart,
   PieController,
@@ -175,76 +176,35 @@ const Main = () => {
   }, []);
 
   return (
-    <div className="flex h-screen bg-gray-900 text-white">
-      {/* Sidebar */}
-      <aside className="w-64 bg-gray-800 flex flex-col p-4">
-        <h2 className="text-xl font-bold mb-6">Dashboard</h2>
-        <ul className="flex-grow space-y-4">
-          <li>
-            <a href="#" className="block p-2 rounded bg-custom-gray-blue">
-              Overview
-            </a>
-          </li>
-          <li>
-            <a
-              href="village.html"
-              className="block p-2 rounded hover:bg-blue-500"
-            >
-              Village Management
-            </a>
-          </li>
-          <li>
-            <a href="chat.html" className="block p-2 rounded hover:bg-blue-500">
-              Chat
-            </a>
-          </li>
-          <li>
-            <a
-              href="gallery.html"
-              className="block p-2 rounded hover:bg-blue-500"
-            >
-              Gallery
-            </a>
-          </li>
-        </ul>
-        <div className="mt-auto flex items-center">
-          <img
-            src="admin.png"
-            alt="Admin Profile"
-            className="w-10 h-10 rounded-full mr-2"
-          />
-          <span>Osamah</span>
-          <a href="#" className="ml-auto text-red-500 font-bold">
-            Logout
-          </a>
-        </div>
-      </aside>
+  <div className="flex flex-col md:flex-row h-screen bg-gray-900 text-white">
+    {/* Sidebar */}
+    <Sidebar />
 
-      {/* Main Content */}
-      <main className="flex-grow flex flex-col">
-        {/* Content */}
-        <div className="flex-grow p-4 overflow-y-auto">
-          <h2 className="text-2xl font-bold mb-4">Overview</h2>
-          <div className="bg-gray-800 rounded mb-4">
-            <div id="map" className="h-72"></div>
+    {/* Main Content */}
+    <main className="flex-grow flex flex-col">
+      {/* Content */}
+      <div className="flex-grow p-4 overflow-y-auto">
+        <h2 className="text-2xl font-bold mb-4">Overview</h2>
+        <div className="bg-gray-800 rounded mb-4">
+          <div id="map" className="h-72"></div>
+        </div>
+        <VillageStats villages={villages} />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="bg-gray-800 rounded p-4">
+            <h3 className="text-lg font-bold mb-2">Age Distribution</h3>
+            <canvas id="ageDistributionChart"></canvas>
           </div>
-          <VillageStats villages={villages} />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-gray-800 rounded p-4">
-              <h3 className="text-lg font-bold mb-2">Age Distribution</h3>
-              <canvas id="ageDistributionChart"></canvas>
-            </div>
-            <div className="bg-gray-800 rounded p-4">
-              <h3 className="text-lg font-bold mb-2">Gender Ratios</h3>
-              <canvas id="genderRatiosChart"></canvas>
-            </div>
+          <div className="bg-gray-800 rounded p-4">
+            <h3 className="text-lg font-bold mb-2">Gender Ratios</h3>
+            <canvas id="genderRatiosChart"></canvas>
           </div>
-          <div className="bg-gray-800 flex-1rounded p-4 mt-4">
-            <h3 className="text-lg font-bold mb-2">Population by Area</h3>
-            <div className="h-full">
-              <PopulationChart villages={villages} />
-            </div>
+        </div>
+        <div className="bg-gray-800 rounded p-4 mt-4">
+          <h3 className="text-lg font-bold mb-2">Population by Area</h3>
+          <div className="h-full">
+            <PopulationChart villages={villages} />
           </div>
+        </div>
         </div>
       </main>
     </div>

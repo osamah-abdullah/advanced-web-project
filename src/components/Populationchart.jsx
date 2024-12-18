@@ -52,7 +52,7 @@ const PopulationChart = ({ villages }) => {
     };
   }, [villages]); // Re-run effect when villages prop changes
 
-  return <canvas ref={chartRef} width="400" height="200"></canvas>;
+  return <canvas ref={chartRef} width="400" height="200" ></canvas>;
 };
 
 export default PopulationChart;
