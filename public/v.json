@@ -1,0 +1,162 @@
+[
+    {
+        "id": 0,
+        "name": "Jabalia - Gaza Strip",
+        "region": "Gaza Strip",
+        "landArea": "5",
+        "latitude": "31.535",
+        "longitude": "34.496",
+        "tags": ["urban", "coastal"],
+        "image": "jabalia.jpg",
+        "demographics": {
+            "populationSize": "220000",
+            "ageDistribution": "0-14: 35%, 15-64: 55%, 65+: 10%",
+            "genderRatios": "Male: 51%, Female: 49%",
+            "populationGrowth": "2.8"
+        }
+    },
+    {
+        "id": 1,
+        "name": "Beit Lahia - Gaza Strip",
+        "region": "Gaza Strip",
+        "landArea": "7",
+        "latitude": "31.558",
+        "longitude": "34.497",
+        "tags": ["urban"],
+        "image": "beitlahia.jpg",
+        "demographics": {
+            "populationSize": "85000",
+            "ageDistribution": "0-14: 38%, 15-64: 54%, 65+: 8%",
+            "genderRatios": "Male: 50%, Female: 50%",
+            "populationGrowth": "3.0"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Khan Younis - Gaza Strip",
+        "region": "Gaza Strip",
+        "landArea": "15",
+        "latitude": "31.343",
+        "longitude": "34.306",
+        "tags": ["rural", "agriculture"],
+        "image": "khan_younis.jpg",
+        "demographics": {
+            "populationSize": "370000",
+            "ageDistribution": "0-14: 36%, 15-64: 57%, 65+: 7%",
+            "genderRatios": "Male: 52%, Female: 48%",
+            "populationGrowth": "2.9"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Deir al-Balah - Gaza Strip",
+        "region": "Gaza Strip",
+        "landArea": "10",
+        "latitude": "31.417",
+        "longitude": "34.350",
+        "tags": ["urban", "small town"],
+        "image": "deir_al_balah.jpg",
+        "demographics": {
+            "populationSize": "100000",
+            "ageDistribution": "0-14: 34%, 15-64: 56%, 65+: 10%",
+            "genderRatios": "Male: 51%, Female: 49%",
+            "populationGrowth": "2.7"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Bethlehem - West Bank",
+        "region": "West Bank",
+        "landArea": "25",
+        "latitude": "31.704",
+        "longitude": "35.207",
+        "tags": ["historic", "tourist"],
+        "image": "bethlehem.jpg",
+        "demographics": {
+            "populationSize": "30000",
+            "ageDistribution": "0-14: 32%, 15-64: 58%, 65+: 10%",
+            "genderRatios": "Male: 50%, Female: 50%",
+            "populationGrowth": "1.5"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Hebron - West Bank",
+        "region": "West Bank",
+        "landArea": "30",
+        "latitude": "31.532",
+        "longitude": "35.099",
+        "tags": ["urban", "industrial"],
+        "image": "hebron.jpg",
+        "demographics": {
+            "populationSize": "215000",
+            "ageDistribution": "0-14: 33%, 15-64: 59%, 65+: 8%",
+            "genderRatios": "Male: 49%, Female: 51%",
+            "populationGrowth": "2.2"
+        }
+    },
+    {
+        "id": 6,
+        "name": "Ramallah - West Bank",
+        "region": "West Bank",
+        "landArea": "20",
+        "latitude": "31.899",
+        "longitude": "35.204",
+        "tags": ["urban", "administrative"],
+        "image": "ramallah.jpg",
+        "demographics": {
+            "populationSize": "57000",
+            "ageDistribution": "0-14: 30%, 15-64: 60%, 65+: 10%",
+            "genderRatios": "Male: 50%, Female: 50%",
+            "populationGrowth": "2.0"
+        }
+    },
+    {
+        "id": 7,
+        "name": "Nablus - West Bank",
+        "region": "West Bank",
+        "landArea": "35",
+        "latitude": "32.221",
+        "longitude": "35.261",
+        "tags": ["historic", "urban"],
+        "image": "nablus.jpg",
+        "demographics": {
+            "populationSize": "156000",
+            "ageDistribution": "0-14: 31%, 15-64: 60%, 65+: 9%",
+            "genderRatios": "Male: 51%, Female: 49%",
+            "populationGrowth": "1.8"
+        }
+    },
+    {
+        "id": 8,
+        "name": "Jericho - West Bank",
+        "region": "West Bank",
+        "landArea": "28",
+        "latitude": "31.868",
+        "longitude": "35.443",
+        "tags": ["rural", "historic"],
+        "image": "jericho.jpg",
+        "demographics": {
+            "populationSize": "20000",
+            "ageDistribution": "0-14: 28%, 15-64: 62%, 65+: 10%",
+            "genderRatios": "Male: 49%, Female: 51%",
+            "populationGrowth": "1.3"
+        }
+    },
+    {
+        "id": 9,
+        "name": "Gaza City - Gaza Strip",
+        "region": "Gaza Strip",
+        "landArea": "16",
+        "latitude": "31.525",
+        "longitude": "34.453",
+        "tags": ["urban", "capital"],
+        "image": "gaza_city.jpg",
+        "demographics": {
+            "populationSize": "590000",
+            "ageDistribution": "0-14: 37%, 15-64: 58%, 65+: 5%",
+            "genderRatios": "Male: 52%, Female: 48%",
+            "populationGrowth": "3.2"
+        }
+    }
+]
