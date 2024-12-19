@@ -6,8 +6,8 @@ export default {
       colors: {
         "custom-gray-blue": "#a0aec0", // Add your custom color
         "custom-box-color": "#202c34",
+        "custom-box-color-light": "#2A3944",
         "background-color": "#1a202c",
-        "box-color": "#202c34",
         "text-color": "#ffffff",
         "placeholder-color": "#a0aec0",
         "button-primary-color": "#4299e1",
@@ -16,6 +16,11 @@ export default {
         "highlight-color": "#4299e1",
         "logout-color": "#f56565",
       },
+      fontSize: {
+        'custom-font-size-24': '1.5rem',
+      },fontFamily: {
+        sans: ['Arial', 'sans-serif'],
+      }
     },
   },
   plugins: [],

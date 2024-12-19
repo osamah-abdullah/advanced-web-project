@@ -6,8 +6,8 @@ const Sidebar = () => {
   const currentPath = location.pathname;
 
   return (
-    <aside className="w-full md:w-64 bg-gray-800 flex flex-col p-4 text-white">
-      <h2 className="text-xl font-bold mb-6">Dashboard</h2>
+    <aside className="w-full md:w-64 bg-custom-box-color flex flex-col p-4 text-white font-sans font-arial">
+      <h2 className="text-custom-font-size-24 font-bold mb-6">Dashboard</h2>
       <ul className="flex-grow space-y-4">
         <li>
           <Link
