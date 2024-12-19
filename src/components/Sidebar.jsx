@@ -61,7 +61,7 @@ const Sidebar = () => {
           className="w-10 h-10 rounded-full mr-2"
         />
         <span>Osamah</span>
-        <Link to="/logout" className="ml-auto text-red-500 font-bold">
+        <Link to="/" className="ml-auto text-red-500 font-bold">
           Logout
         </Link>
       </div>
