@@ -8,6 +8,7 @@ import PopulationChart from "./components/Populationchart";
 import Village from "./components/village";
 import ErrorBoundary from './components/ErrorBoundary';
 import ChatWithAdmins from "./components/Chatwithadmins";
+import Gallary from "./components/Gallary";
 function App() {
   return (
     <ErrorBoundary>
@@ -17,7 +18,7 @@ function App() {
             <Route path="/main" element={<Main />} />
             <Route path="/village" element={<Village />} />
             <Route path="/chat" element={<ChatWithAdmins />} />
-            <Route path="/gallery" element={<div>Gallery Component</div>} />
+            <Route path="/gallery" element={<Gallary />} />
             <Route path="/" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
           </Routes>
